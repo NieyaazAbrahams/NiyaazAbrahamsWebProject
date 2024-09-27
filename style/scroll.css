@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 #home,
 #introduction,
 #Learn,
+#footer
 #Contact {
     margin: 0;
 }
@@ -39,10 +42,15 @@ html{
     height: 100vh;
 }
 
-#Footer{
-    background-color: #06040c;
-    height: 10em;
-    width: 100%;
+#footer{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 1280px;
+    width: 95%;
+    background: #10182F;
+    border-radius: 6px;
 }
 
 @media screen and (max-width: 770px){

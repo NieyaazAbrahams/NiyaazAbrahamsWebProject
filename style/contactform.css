@@ -1,4 +1,7 @@
 /* Basic Reset */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
     padding: 0;
     margin: 0;
@@ -210,7 +213,7 @@ textarea{
         color: #edf0f1;
         text-decoration: none;
         position: relative;
-        top: -13%;
+        top: -50%;
         left: -20%;
     }
 }
