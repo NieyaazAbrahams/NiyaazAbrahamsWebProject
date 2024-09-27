@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body { 
+    background-color: #090612;
+}
+
+li, a, .openbtn {
+    font-family: "Montserat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #edf0f1;
+    text-decoration: none;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    background-color: #090612;
+    transition: 0.5s ease all;
+}
+
+header.sticky {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    transition: 0.5s ease all;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    z-index: 9999;
+    background-color: #090612;
+}
+
+.logo {
+    position: relative;
+    cursor: pointer;
+    width: 8.3rem;
+    height: 3rem;
+}
+
+.nav_links {
+    position: relative;
+    list-style: none;
+}
+
+.nav_links li {
+    position: relative;
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav_links li a {
+    transition: all 0.3s ease 0.1s;
+}
+
+.nav_links li a:hover {
+    color: #7399b5;
+    text-shadow: 0 0 8px #3d8fc9;
+}
+
+.cta{
+    padding: 9px 25px;
+    background: rgba(0, 136, 169, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.5s ease 0.1s;
+}
+
+.cta:hover {
+    background: #7399b5;
+    box-shadow: 0 0 8px #3d8fc9;
+}
+
+.cta{
+    display: flex;
+}
+
+.home_overlay{
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: clamp(4.5rem, 2vw, 5rem); 
+    overflow: hidden;
+    text-align: center;
+    font-family: "Montserat", sans-serif;
+    -webkit-box-reflect:below 1px linear-gradient(transparent 20%, #0001);
+    line-height: 1.1em;
+    outline: none;
+    animation: textglow 1s linear infinite;
+}
+.hamburger{
+    position: absolute;
+    visibility: hidden;
+    background-image: url(../images/icons/menu.png);
+    filter: invert(100%);
+    background-size: cover;
+    height: 1.8em;
+    width: 1.8em;
+    z-index: 99999;
+    left: 83%;
+}
+
+@keyframes textglow {
+    0%, 18%, 20%,50.1%,60%,65%,1%,80%,90.1%,92%
+    {
+        color: #333644;
+        text-shadow: none;
+    }
+    18.1%, 20.1%, 30%, 50%, 60%, 80.1%, 90%, 92.1%, 100%{
+        color: #edf0f1;
+        text-shadow: 0 0 0.5px #3d8fc9,
+        0 0 1px #3d8fc9,
+        0 0 2px #3d8fc9,
+        0 0 2.5px #3d8fc9,
+        0 0 10px #3d8fc9;
+    }
+}
+
+@media (max-width: 680px){
+    .hamburger{
+        display: block;
+        visibility: visible;
+        cursor: pointer;
+        background-size: cover;
+    }
+    .hideOnMobile{
+        display: none;
+    }
+}
