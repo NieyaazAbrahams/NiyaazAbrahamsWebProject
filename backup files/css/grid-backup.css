@@ -1,0 +1,46 @@
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(3);
+    grid-template-columns: repeat(auto-fit, minmax(240px));
+    color: #edf0f1;
+    padding: 10px 10px;
+    margin: 5px 10px;
+    border-radius: 2rem;
+    font-family: "Montserat", sans-serif;
+}
+
+.card{
+    background-color: #090612;
+    border-radius: 1rem;
+    margin: 30px;
+}
+
+.card_content{
+    font-size: clamp(0.1rem, 5vw, 0.93rem);
+    font-family: "Montserat", sans-serif;
+    padding-top: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    height: 20rem;  
+    color: rgb(224, 224, 224);
+    border-radius: 1rem 1rem 1rem 1rem;
+    position: relative;
+}
+
+.main_heading{
+    font-size: 25px;
+    padding-top: 30px;
+    padding-left: 30px;
+}
+
+.card_effects{
+    box-shadow: 0px 0px 7px 2px #3dc965;
+}
+
+.sub_heading{
+    font-size: 15px;
+    font-style: italic;
+    padding: 0px 30px;
+    padding-bottom: 30px;
+}
