@@ -53,13 +53,13 @@
 }
 
 .c_right {
-    border-left: 3px solid #3d8fc9;
+    border-left: 3px solid #9cc8a9;
     padding-left: 3em;
     transform: translateX(50%);
 }
 
 .c_left {
-    border-right: 3px solid #3d8fc9;
+    border-right: 3px solid #9cc8a9;
     padding-right: 3em;
     transform: translateX(-49.5%);
 }
@@ -67,7 +67,7 @@
 .c_right::before,
 .c_left::before{
     content: '';
-    background: #3d8fc9;
+    background: #9cc8a9;
     width: 3em;
     height: 3px;
     position: absolute;
@@ -105,7 +105,7 @@
         top: -2em;
         left: 50%;
         transform: translateX(-50%);
-        border: 3px solid #3d8fc9;
+        border: 3px solid #9cc8a9;
     }
     .timeline_title{
         margin-bottom: 3em;
@@ -118,7 +118,7 @@
         margin-top: 2em;
         margin-bottom: 2em;
         padding-top: 2em;
-        border-bottom: 2px solid #3d8fc9;
+        border-bottom: 2px solid #9cc8a9;
         text-align: center;
     }
 }
@@ -135,7 +135,7 @@
         margin-top: 2em;
         margin-bottom: 1.3em;
         padding-top: 2em;
-        border-bottom: 2px solid #3d8fc9;
+        border: none;
         text-align: center;
     }
     .timeline .checkpoint::before{
